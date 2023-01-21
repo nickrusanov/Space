@@ -1,51 +1,555 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 @@include('./chunk/head.html', {
 "title": "",
 "description": ""
 })
 
-<body>
+<body class="product">
 	@@include('./chunk/header.html')
+
+	<div class="breadcrumbs product__breadcrumbs">
+		<div class="container container--w1630">
+			<ul class="breadcrumbs__list">
+				<li class="breadcrumbs__item">
+					<a class="breadcrumbs__link" href="#">Главная</a>
+				</li>
+
+				<li class="breadcrumbs__item">
+					<a class="breadcrumbs__link" href="#">Категории</a>
+				</li>
+
+				<li class="breadcrumbs__item">
+					<a class="breadcrumbs__link" href="#">Мебель</a>
+				</li>
+
+				<li class="breadcrumbs__item">
+					<a class="breadcrumbs__link" href="#">Стулья</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 
 	<main class="main">
 		<div class="container container--w1710">
-			<div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nesciunt accusamus incidunt,
-				quam quis rerum modi ut minus dolorem hic vitae, odio excepturi et iure autem, delectus molestias aut voluptas
-				ipsa a praesentium laudantium quaerat. Aliquid consectetur sequi cum. Iure excepturi deserunt magnam natus, ea
-				reprehenderit nihil debitis aliquam quaerat consequuntur iste veritatis soluta odit dolor laboriosam, rem sit!
-				Placeat voluptate, ea voluptatum delectus nobis temporibus earum sed adipisci harum ullam omnis eveniet fugit
-				ipsum expedita itaque quas, vero sunt error eaque molestias dolore cumque mollitia quisquam dolorum? Natus
-				distinctio nulla esse harum quos quisquam. Et est voluptate nemo minus eos aperiam unde, repudiandae minima id,
-				asperiores laudantium quis mollitia tempora quo quasi rem deserunt. Doloribus cum est saepe recusandae. Harum,
-				odit ad. Deleniti perspiciatis maiores assumenda consequuntur suscipit facilis repellendus aspernatur voluptate,
-				dolorum, unde velit dolorem culpa ipsam fugiat minima rerum provident eius excepturi ducimus, minus harum ipsa
-				earum. Hic explicabo veritatis nostrum nulla placeat porro similique voluptate ipsa, quam, iusto, eos quibusdam
-				veniam molestiae. Id, amet? Consequatur facilis, totam sint inventore sapiente aliquid odio amet doloribus illum
-				ut recusandae voluptatum fugit, nulla ea magni earum nostrum modi ipsum? Commodi consectetur dolorem nobis atque
-				illo facilis cumque eligendi odio ratione architecto, inventore, eos assumenda voluptatum voluptatibus sunt.
-				Expedita inventore ea adipisci facilis deleniti illo, dolorum, quisquam ratione ipsa in fugiat dolorem sint
-				neque eligendi itaque. Consequatur illo amet ab, odit ea dignissimos aliquam voluptate sit itaque culpa beatae
-				repudiandae illum id. Inventore, quisquam cupiditate libero, aliquam, dignissimos quod minus sed nam minima
-				tempore corporis velit repudiandae praesentium laboriosam doloribus. Adipisci cupiditate quidem odit quis fuga
-				reiciendis saepe fugiat, non nihil aspernatur facilis quaerat quibusdam doloremque labore ut ducimus quod autem
-				magnam. Impedit, quia perspiciatis quod aliquid repudiandae possimus ab iure animi ipsum praesentium cupiditate
-				dolor doloribus ipsa sequi cum in labore pariatur similique velit voluptate nihil dolorum sint. Sapiente,
-				aperiam deleniti dolorum facilis autem explicabo adipisci temporibus excepturi repudiandae, est delectus quam
-				nesciunt molestiae odit dolorem aut placeat dignissimos voluptatum. Consequatur porro rem, exercitationem
-				inventore sed culpa. Enim architecto aspernatur minus nesciunt repellat delectus praesentium dolores at
-				excepturi ipsum pariatur, tempore aliquam, consectetur officiis eum recusandae amet iste voluptatum, nobis
-				temporibus? Rem qui quasi odio debitis. Laborum fugiat dolorem enim. Vitae quas dolore omnis sunt, odio quidem
-				nesciunt ex consequatur quaerat distinctio molestiae voluptatum tenetur quos. Inventore ipsam ea explicabo
-				temporibus dolores distinctio unde tempora magni obcaecati aliquam assumenda optio mollitia perferendis quas vel
-				incidunt quod ab odio dolorum a magnam, doloremque voluptatem eos suscipit? Quasi praesentium dolorum iusto
-				tenetur sequi, soluta in maxime sapiente consequuntur blanditiis molestiae minus aliquid labore eos, quo facilis
-				dolorem voluptate? Similique nostrum, neque laborum animi molestiae quaerat doloremque consequuntur asperiores
-				in veniam optio corrupti autem. Aperiam architecto voluptates ipsa consequatur sapiente harum velit est labore
-				omnis nihil dolorem ea voluptatum laudantium corrupti impedit tenetur facere, eos magnam cum non veritatis
-				veniam et. Iste officia perferendis laudantium rem eaque distinctio unde nulla. Inventore dicta est quasi beatae
-				placeat pariatur provident impedit ex nam quibusdam?</div>
+			<div class="product__inner">
+				<aside class="product__aside">
+					<div class="product__aside-box">
+						<h2 class="product__aside-title">Категории</h2>
+
+						<ul class="product__category-list">
+							<li class="product__category-item">
+								<button class="product__category-btn">
+									Бытовая техника
+									<svg class="product__drop-svg" fill="currentColor" viewBox="0 0 14 9"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M7 9L0 2.2496L2.33443 0L7 4.5008L11.6656 0L14 2.2496L7 9Z" />
+									</svg>
+								</button>
+
+								<ul class="product__subcategory-list product__subcategory-list--hidden">
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Встриваемая техника
+										</a>
+									</li>
+
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Техника для кухни
+										</a>
+									</li>
+
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Техника для дома
+										</a>
+									</li>
+								</ul>
+							</li>
+
+
+							<li class="product__category-item">
+								<button class="product__category-btn">
+									Красота и здоровье
+									<svg class="product__drop-svg" fill="currentColor" viewBox="0 0 14 9"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M7 9L0 2.2496L2.33443 0L7 4.5008L11.6656 0L14 2.2496L7 9Z" />
+									</svg>
+								</button>
+
+								<ul class="product__subcategory-list product__subcategory-list--hidden">
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Техника для красоты
+										</a>
+									</li>
+
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Медицинские товары и здоровье
+										</a>
+									</li>
+
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Материнство и детство
+										</a>
+									</li>
+								</ul>
+							</li>
+
+
+							<li class="product__category-item">
+								<button class="product__category-btn">
+									Смартфоны и фото
+									<svg class="product__drop-svg" fill="currentColor" viewBox="0 0 14 9"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M7 9L0 2.2496L2.33443 0L7 4.5008L11.6656 0L14 2.2496L7 9Z" />
+									</svg>
+								</button>
+
+								<ul class="product__subcategory-list product__subcategory-list--hidden">
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Смартфоны и гаджеты
+										</a>
+									</li>
+
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Планшеты, электронные книги
+										</a>
+									</li>
+
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Фототехника
+										</a>
+									</li>
+								</ul>
+							</li>
+
+
+							<li class="product__category-item">
+								<button class="product__category-btn">
+									ПК, ноутбуки, периферия
+									<svg class="product__drop-svg" fill="currentColor" viewBox="0 0 14 9"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M7 9L0 2.2496L2.33443 0L7 4.5008L11.6656 0L14 2.2496L7 9Z" />
+									</svg>
+								</button>
+
+								<ul class="product__subcategory-list product__subcategory-list--hidden">
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Ноутбуки и аксессуары
+										</a>
+									</li>
+
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Компьютеры и ПО
+										</a>
+									</li>
+
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Периферия и аксессуары
+										</a>
+									</li>
+								</ul>
+							</li>
+
+
+							<li class="product__category-item">
+								<button class="product__category-btn">
+									Офис и мебель
+									<svg class="product__drop-svg" fill="currentColor" viewBox="0 0 14 9"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M7 9L0 2.2496L2.33443 0L7 4.5008L11.6656 0L14 2.2496L7 9Z" />
+									</svg>
+								</button>
+
+								<ul class="product__subcategory-list product__subcategory-list--hidden">
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Техника для печати
+										</a>
+									</li>
+
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Расходные материалы и постпечатное оборудование
+										</a>
+									</li>
+
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Товары для презентаций и мебель
+										</a>
+									</li>
+
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Торговое оборудование и связь
+										</a>
+									</li>
+								</ul>
+							</li>
+
+
+							<li class="product__category-item product__category-item--hidden">
+								<button class="product__category-btn">
+									Отдых и развлечения
+									<svg class="product__drop-svg" fill="currentColor" viewBox="0 0 14 9"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M7 9L0 2.2496L2.33443 0L7 4.5008L11.6656 0L14 2.2496L7 9Z" />
+									</svg>
+								</button>
+
+								<ul class="product__subcategory-list product__subcategory-list--hidden">
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Портативные транспортные средства
+										</a>
+									</li>
+
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Развлечения и хобби
+										</a>
+									</li>
+
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Активный отдых, спорт и туризм
+										</a>
+									</li>
+
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Товары для оформления праздников
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="product__category-item product__category-item--hidden">
+								<button class="product__category-btn">
+									Инструмент и стройка
+									<svg class="product__drop-svg" fill="currentColor" viewBox="0 0 14 9"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M7 9L0 2.2496L2.33443 0L7 4.5008L11.6656 0L14 2.2496L7 9Z" />
+									</svg>
+								</button>
+
+								<ul class="product__subcategory-list product__subcategory-list--hidden">
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Аккумуляторные инструменты
+										</a>
+									</li>
+
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Электроинструменты
+										</a>
+									</li>
+
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Строительное оборудование и силовая техника
+										</a>
+									</li>
+
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Ручной инструмент, измерение и хранение
+										</a>
+									</li>
+								</ul>
+							</li>
+
+
+							<li class="product__category-item product__category-item--hidden">
+								<button class="product__category-btn">
+									Аксессуары и услуги
+									<svg class="product__drop-svg" fill="currentColor" viewBox="0 0 14 9"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M7 9L0 2.2496L2.33443 0L7 4.5008L11.6656 0L14 2.2496L7 9Z" />
+									</svg>
+								</button>
+
+								<ul class="product__subcategory-list product__subcategory-list--hidden">
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Для мобильных устройств
+										</a>
+									</li>
+
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Для компьютеров и ноутбуков
+										</a>
+									</li>
+
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Для бытовой техники
+										</a>
+									</li>
+
+									<li class="product__subcategory-item">
+										<a class="product__subcategory-link" href="#">
+											Услуги
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<button class="product__more">Показать все</button>
+					</div>
+
+					<form class="product__aside-form">
+						<h2 class="product__aside-title">Фильтры</h2>
+
+						<div class="product__filter-box">
+							<h3 class="product__filter-title">ЦВЕТ</h3>
+
+							<ul class="product__colors-list">
+								<li class="product__colors-item">
+									<input class="product__colors-input" type="radio" name="color" id="color-white" value="white">
+									<label class="product__colors-label" for="color-white">
+										<img class="product__colors-img" src="./img/colors/white.svg" alt="white">
+									</label>
+								</li>
+
+								<li class="product__colors-item">
+									<input class="product__colors-input" type="radio" name="color" id="color-blue" value="white">
+									<label class="product__colors-label" for="color-blue">
+										<img class="product__colors-img" src="./img/colors/blue.svg" alt="blue">
+									</label>
+								</li>
+
+								<li class="product__colors-item">
+									<input class="product__colors-input" type="radio" name="color" id="color-yellow" value="white">
+									<label class="product__colors-label" for="color-yellow">
+										<img class="product__colors-img" src="./img/colors/yellow.svg" alt="yellow">
+									</label>
+								</li>
+
+								<li class="product__colors-item">
+									<input class="product__colors-input" type="radio" name="color" id="color-green" value="green">
+									<label class="product__colors-label" for="color-green">
+										<img class="product__colors-img" src="./img/colors/green.svg" alt="green">
+									</label>
+								</li>
+
+								<li class="product__colors-item">
+									<input class="product__colors-input" type="radio" name="color" id="color-red" value="red">
+									<label class="product__colors-label" for="color-red">
+										<img class="product__colors-img" src="./img/colors/red.svg" alt="red">
+									</label>
+								</li>
+
+								<li class="product__colors-item">
+									<input class="product__colors-input" type="radio" name="color" id="color-olive" value="olive">
+									<label class="product__colors-label" for="color-olive">
+										<img class="product__colors-img" src="./img/colors/olive.svg" alt="olive">
+									</label>
+								</li>
+
+								<li class="product__colors-item">
+									<input class="product__colors-input" type="radio" name="color" id="color-pink" value="pink">
+									<label class="product__colors-label" for="color-pink">
+										<img class="product__colors-img" src="./img/colors/pink.svg" alt="pink">
+									</label>
+								</li>
+
+								<li class="product__colors-item">
+									<input class="product__colors-input" type="radio" name="color" id="color-violet" value="violet">
+									<label class="product__colors-label" for="color-violet">
+										<img class="product__colors-img" src="./img/colors/violet.svg" alt="violet">
+									</label>
+								</li>
+
+								<li class="product__colors-item">
+									<input class="product__colors-input" type="radio" name="color" id="color-brown" value="brown">
+									<label class="product__colors-label" for="color-brown">
+										<img class="product__colors-img" src="./img/colors/brown.svg" alt="brown">
+									</label>
+								</li>
+
+								<li class="product__colors-item">
+									<input class="product__colors-input" type="radio" name="color" id="color-orange" value="orange">
+									<label class="product__colors-label" for="color-orange">
+										<img class="product__colors-img" src="./img/colors/orange.svg" alt="orange">
+									</label>
+								</li>
+
+								<li class="product__colors-item">
+									<input class="product__colors-input" type="radio" name="color" id="color-grey" value="grey">
+									<label class="product__colors-label" for="color-grey">
+										<img class="product__colors-img" src="./img/colors/grey.svg" alt="grey">
+									</label>
+								</li>
+
+								<li class="product__colors-item">
+									<input class="product__colors-input" type="radio" name="color" id="color-black" value="black">
+									<label class="product__colors-label" for="color-black">
+										<img class="product__colors-img" src="./img/colors/black.svg" alt="black">
+									</label>
+								</li>
+							</ul>
+						</div>
+
+						<div class="product__filter-box">
+							<h3 class="product__filter-title">ЦЕНА</h3>
+							<div class="product__price">
+								<div class="product__price-box">
+									<input class="product__price-input" name="price-min" type="number" min="399" max="22349"
+										placeholder="от 399">
+
+									<button class="product__price-reset" type="button">
+										<svg class="product__price-reset-svg" width="18" height="18" viewBox="0 0 25 25" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<rect x="0.699707" y="2.82843" width="4" height="30" rx="2"
+												transform="rotate(-45 0.699707 2.82843)" />
+											<rect x="21.9129" width="4" height="30" rx="2" transform="rotate(45 21.9129 0)" />
+										</svg>
+									</button>
+								</div>
+
+								<div class="product__price-box">
+									<input class="product__price-input" name="price-max" type="number" min="399" max="22349"
+										placeholder="до 22349">
+
+									<button class="product__price-reset" type="button">
+										<svg class="product__price-reset-svg" width="18" height="18" viewBox="0 0 25 25" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<rect x="0.699707" y="2.82843" width="4" height="30" rx="2"
+												transform="rotate(-45 0.699707 2.82843)" />
+											<rect x="21.9129" width="4" height="30" rx="2" transform="rotate(45 21.9129 0)" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="product__filter-box">
+							<h3 class="product__filter-title">ОЦЕНКА</h3>
+
+							<div class="product__rating">
+								<button class="product__rating-btn" type="button">
+									<img class="product__rating-img product__rating-img--selected" src="./img/stars/stars-0.png"
+										alt="rating: 0">
+									<svg class="product__drop-svg product__drop-svg--rating" fill="currentColor" viewBox="0 0 14 9"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M7 9L0 2.2496L2.33443 0L7 4.5008L11.6656 0L14 2.2496L7 9Z" />
+									</svg>
+								</button>
+
+								<div class="product__rating-box">
+									<input class="product__rating-input" type="radio" name="rating" id="rating-zero" value="0">
+									<label class="product__rating-label" for="rating-zero">
+										<img class="product__rating-img" src="./img/stars/stars-0.png" alt="rating: 0">
+									</label>
+
+									<input class="product__rating-input" type="radio" name="rating" id="rating-one" value="1">
+									<label class="product__rating-label" for="rating-one">
+										<img class="product__rating-img" src="./img/stars/stars-1.png" alt="rating: 1">
+									</label>
+
+									<input class="product__rating-input" type="radio" name="rating" id="rating-two" value="2">
+									<label class="product__rating-label" for="rating-two">
+										<img class="product__rating-img" src="./img/stars/stars-2.png" alt="rating: 2">
+									</label>
+
+									<input class="product__rating-input" type="radio" name="rating" id="rating-three" value="3">
+									<label class="product__rating-label" for="rating-three">
+										<img class="product__rating-img" src="./img/stars/stars-3.png" alt="rating: 3">
+									</label>
+
+									<input class="product__rating-input" type="radio" name="rating" id="rating-four" value="4">
+									<label class="product__rating-label" for="rating-four">
+										<img class="product__rating-img" src="./img/stars/stars-4.png" alt="rating: 4">
+									</label>
+
+									<input class="product__rating-input" type="radio" name="rating" id="rating-five" value="5">
+									<label class="product__rating-label" for="rating-five">
+										<img class="product__rating-img" src="./img/stars/stars-5.png" alt="rating: 5">
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<button class="product__filter-send" type="submit">Применить</button>
+					</form>
+				</aside>
+
+
+				<section class="product__box">
+					<h1 class="product__box-title">Стулья</h1>
+					<p class="product__box-subtitle">128 товаров</p>
+
+					<ul class="product__items">
+						<li class="product__item">
+							<picture>
+								<source srcset="./img/content/chairs/chair1.webp" type="image/webp">
+								<img class="product__item-img" src="./img/content/chairs/chair1.jpg" alt="chair">
+							</picture>
+
+							<svg class="product__item-fav-svg" width="32" height="32" viewBox="0 0 32 32" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M22.45 6C23.1781 5.99939 23.899 6.14413 24.5704 6.42575C25.2418 6.70736 25.8502 7.12018 26.36 7.64C27.4104 8.70638 27.9992 10.1432 27.9992 11.64C27.9992 13.1368 27.4104 14.5736 26.36 15.64L16 26.13L5.64002 15.64C4.5896 14.5736 4.00081 13.1368 4.00081 11.64C4.00081 10.1432 4.5896 8.70638 5.64002 7.64C6.15011 7.12055 6.7586 6.70795 7.42993 6.42629C8.10127 6.14464 8.82199 5.99957 9.55002 5.99957C10.278 5.99957 10.9988 6.14464 11.6701 6.42629C12.3414 6.70795 12.9499 7.12055 13.46 7.64L16 10.24L18.53 7.66C19.0383 7.13399 19.6474 6.71586 20.3209 6.43064C20.9944 6.14542 21.7186 5.99895 22.45 6ZM22.45 4C21.4556 3.99916 20.4711 4.19686 19.5541 4.5815C18.6372 4.96615 17.8062 5.53 17.11 6.24L16 7.36L14.89 6.24C14.193 5.53129 13.3618 4.96841 12.445 4.58419C11.5282 4.19997 10.5441 4.0021 9.55002 4.0021C8.55596 4.0021 7.57184 4.19997 6.65503 4.58419C5.73822 4.96841 4.90707 5.53129 4.21002 6.24C2.7919 7.68363 1.99731 9.62636 1.99731 11.65C1.99731 13.6736 2.7919 15.6164 4.21002 17.06L16 29L27.79 17.06C29.2081 15.6164 30.0027 13.6736 30.0027 11.65C30.0027 9.62636 29.2081 7.68363 27.79 6.24C27.0931 5.53091 26.2621 4.96765 25.3453 4.58306C24.4284 4.19848 23.4442 4.00028 22.45 4Z"
+									fill="white" />
+							</svg>
+
+							<div class="product__item-desc">
+								<h4 class="product__item-title">Чёрный деревянный стул</h4>
+								<p class="product__item-price">2235&#8381;</p>
+							</div>
+
+							<svg class="product__item-cart-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M7.36633 9.33333H25.753C26.1256 9.33335 26.494 9.41143 26.8345 9.56254C27.1751 9.71365 27.4802 9.93444 27.7301 10.2107C27.9801 10.4869 28.1695 10.8125 28.2859 11.1664C28.4024 11.5203 28.4434 11.8946 28.4063 12.2653L27.6063 20.2653C27.5405 20.9233 27.2326 21.5334 26.7423 21.9772C26.252 22.4209 25.6143 22.6666 24.953 22.6667H12.2197C11.603 22.6669 11.0052 22.4534 10.5283 22.0625C10.0513 21.6716 9.72454 21.1274 9.60367 20.5227L7.36633 9.33333Z"
+									stroke-width="3" stroke-linejoin="round" />
+								<path
+									d="M7.36633 9.33333L6.28633 5.00933C6.2141 4.721 6.0476 4.46508 5.81328 4.28221C5.57895 4.09934 5.29024 4.00001 4.993 4H3.36633M11.3663 28H14.033M22.033 28H24.6997"
+									stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</li>
+					</ul>
+
+					<div class="product__pagination">
+						<a class="product__pagination-link" href="#">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M14.4777 18L16 16.59L11.0553 12L16 7.41L14.4777 6L8 12L14.4777 18Z" fill="#4E4949" />
+							</svg>
+						</a>
+
+						<span class="product__pagination-link product__pagination-link--active">1</span>
+
+						<a class="product__pagination-link" href="#">2</a>
+
+						<a class="product__pagination-link" href="#">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9.52227 6L8 7.41L12.9447 12L8 16.59L9.52227 18L16 12L9.52227 6Z" fill="#4E4949" />
+							</svg>
+						</a>
+
+						<a class="product__pagination-link" href="#">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M14.5223 6L13 7.41L17.9447 12L13 16.59L14.5223 18L21 12L14.5223 6Z" fill="#4E4949" />
+								<path d="M6.52227 6L5 7.41L9.94467 12L5 16.59L6.52227 18L13 12L6.52227 6Z" fill="#4E4949" />
+							</svg>
+						</a>
+					</div>
+				</section>
+			</div>
 		</div>
 	</main>
 

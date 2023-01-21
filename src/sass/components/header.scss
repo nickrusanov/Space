@@ -108,10 +108,11 @@
 		width: 100%;
 		max-width: 275px;
 		max-height: 0;
+		transform: scale(0.9);
 
 		position: absolute;
 		right: 15px;
-		transform: scale(0.9);
+		z-index: 100;
 
 		border-radius: 15px;
 		box-shadow: 0 0 10px $color-border;
@@ -313,6 +314,10 @@
 }
 
 @include lg {
+	.header {
+		height: 90px;
+	}
+
 	.search__send {
 		padding: 10px 15px;
 		font-size: 16px;
@@ -334,11 +339,15 @@
 
 @include md {
 	.search {
-		max-width: none;
+		max-width: 700px;
 	}
 
 	.search__btn {
 		pointer-events: all;
+	}
+
+	.search__input {
+		max-width: 600px;
 	}
 
 	.search--mobile-hide {
@@ -354,8 +363,10 @@
 		}
 
 		.search__send {
+			transition: all .1s ease;
+			opacity: 0;
 			max-width: 0;
-			padding: 0;
+			padding: 10px 0;
 			overflow: hidden;
 		}
 	}
@@ -394,5 +405,6 @@
 
 	.search__input {
 		font-size: 16px;
+		padding-right: 20px;
 	}
 }
