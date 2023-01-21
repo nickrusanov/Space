@@ -66,6 +66,7 @@
 	}
 
 	&__icon-counter {
+		display: none;
 		position: absolute;
 		right: 0;
 		top: 0;
@@ -89,6 +90,10 @@
 
 			background-color: $color-bg-counter;
 			border-radius: 10px;
+		}
+
+		&--active {
+			display: block;
 		}
 	}
 

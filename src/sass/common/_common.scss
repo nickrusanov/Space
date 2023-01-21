@@ -80,14 +80,16 @@ body {
 }
 
 .breadcrumbs {
-	overflow: auto;
+	overflow-x: auto;
+	overflow-y: hidden;
 	background-color: $color-surface;
+	min-height: 92px;
 
 	&__list {
 		padding: 34px 0;
 		display: flex;
-
 	}
+
 	&__item {
 		padding-right: 40px;
 		margin-right: 16px;
@@ -118,6 +120,10 @@ body {
 // MEDIA 
 
 @include media('600px') {
+	.breadcrumbs {
+		min-height: 56px;
+	}
+
 	.breadcrumbs__item {
 		padding-right: 32px;
 		margin-right: 8px;
