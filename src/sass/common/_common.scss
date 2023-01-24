@@ -9,7 +9,7 @@
 
 	--color-grey-0--hover: hsl(0, 0%, 95%);
 	--color-grey-1--hover: hsl(0, 0%, 90%);
-	--color-grey-3--hover: hsl(0, 0%, 65%);
+	--color-grey-3--hover: hsl(0, 0%, 60%);
 	--color-grey-4--hover: hsl(16, 5%, 52%);
 
 	--color-brand: hsl(46, 81%, 59%);
@@ -110,16 +110,22 @@ body {
 			mask: url('../img/icons/next.svg');
 		}
 	}
+
 	&__link {
+		@extend %trans;
 
 		color: $color-breadcrumbs;
+
+		&:hover {
+			color: $color-breadcrumbs--hover;
+		}
 	}
 }
 
 
 // MEDIA 
 
-@include media('600px') {
+@include lg {
 	.breadcrumbs {
 		min-height: 56px;
 	}

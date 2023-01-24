@@ -2,6 +2,7 @@
 
 $fonts-root: '../fonts/';
 $font-text: 'SpaceGrotesk', sans-serif;
+$font-product: 'Inter', 'Arial';
 
 
 // SCREENS
@@ -18,12 +19,14 @@ $color-text: var(--color-grey-6);
 $color-text-product: var(--color-grey-0);
 $color-text-product--shadow: var(--color-grey-5);
 $color-text-counter: var(--color-grey-0);
+$color-text-footer: var(--color-grey-1);
 $color-breadcrumbs: var(--color-grey-3);
 $color-breadcrumbs--hover: var(--color-grey-3--hover);
 $color-text-categories: var(--color-grey-4);
 $color-text-categories--hover: var(--color-brand--darkest);
 $color-pagination: var(--color-grey-5);
 $color-pagination--hover: var(--color-grey-5--hover);
+$color-pagination--active: var(--color-grey-0);
 $color-placeholder: var(--color-grey-4);
 
 $color-icon: var(--color-grey-6);
@@ -38,6 +41,7 @@ $color-bg--hover: var(--color-grey-0--hover);
 $color-bg-counter: var(--color-accent);
 $color-bg-product: var(--color-grey-6);
 $color-bg-product--hover: var(--color-brand--darkest);
+$color-bg-footer: var(--color-grey-5);
 $color-surface: var(--color-grey-1);
 $color-surface--hover: var(--color-grey-1--hover);
 $color-border: var(--color-grey-2);
